@@ -1,0 +1,95 @@
+<html lang="eng">
+<head>
+<style media="screen">
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+  body {
+    font-family: Ropa Sans;
+padding: 33%;
+background-color: #D39FFA;
+  }
+  label {
+    display: block;
+    padding: 5px;
+  }
+  form {
+    background-color: #FECBFF;
+    padding: 40px 40px 40px 40px;
+  }
+input {
+  
+}
+.radio-inline {
+  display: inline-block;
+
+}
+
+input[type=checkbox]:not(old) + label,
+      input[type=radio   ]:not(old) + label {
+        display      : inline-block;
+        margin-left  : -28px;
+        padding-left : 28px;
+      }
+</style>
+
+</head>
+
+<body>
+
+
+<h1 id="title">This is a survey form </h1>
+<p id="description">Miserable Try to be a good web dev</p>
+<form id="survey-form">
+<label id="name-label"><b>Name:</b></label>
+<input type="text" name="Name" id="name"  placeholder="Name"required></input><br>
+<label id="email-label"><b>Email:</b></label>
+<input type="email" name="Name" id="email" placeholder="Email" required></input><br>
+<label id="number-label"><b>Number:</b></label>
+<input type="number" name="Number" id="number" placeholder="Number" min="0" max="300" required></input>
+<br>
+<label  for="Jobs"><b>Choose a job</b></label>
+
+<select id="dropdown" name="Jobs" id="Jobs">
+<option value="Cleaner">Cleaner</option>
+<option value="Security">Security</option>
+<option value="Medic">Medic</option>
+<option value="ASP">ASP</option>
+<option value="Web-Developer">Web-Developer</option>
+</select>
+<br>
+<div class="button-area">
+
+
+<label  for="gender"><b>Gender</b></label>
+<input type="radio" class="radio-inline id="button" name="button" value="gender">
+man<label for="button"></label>
+<input type="radio" class="radio-inline id="button2" name="button" value="gender2">
+Woman<label for="button2"></label>
+<input type="radio" class="radio-inline id="button3" name="button" value="gender3">
+Business<label for="button3"></label>
+<br>
+<div class="button-area">
+
+  </div>
+
+<label  for="Tools"><b>Things you might need</b></label>
+ <input type="checkbox" id="Tools1" name="Tools" value="Tools1">
+Tools<label for="Tools"></label>
+<input type="checkbox" id="Tools2" name="Tools2" value="Tools2">
+Equipment<label for="Tools"></label>
+<input type="checkbox" id="Tools3" name="Tools3" value="Tools3">
+Naked<label for="Tools"></label>
+
+</div>
+<br>
+<label for="info"><b>Adicional information about your portifolio:</b> </label>
+<br>
+<textarea name="info" rows="3" cols="40" id="info"  placeholder="Survey form portifolio for Github(Web Developer)">
+</textarea>
+<input  type="submit" id="submit">
+</form>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</body>
+
+</html>
